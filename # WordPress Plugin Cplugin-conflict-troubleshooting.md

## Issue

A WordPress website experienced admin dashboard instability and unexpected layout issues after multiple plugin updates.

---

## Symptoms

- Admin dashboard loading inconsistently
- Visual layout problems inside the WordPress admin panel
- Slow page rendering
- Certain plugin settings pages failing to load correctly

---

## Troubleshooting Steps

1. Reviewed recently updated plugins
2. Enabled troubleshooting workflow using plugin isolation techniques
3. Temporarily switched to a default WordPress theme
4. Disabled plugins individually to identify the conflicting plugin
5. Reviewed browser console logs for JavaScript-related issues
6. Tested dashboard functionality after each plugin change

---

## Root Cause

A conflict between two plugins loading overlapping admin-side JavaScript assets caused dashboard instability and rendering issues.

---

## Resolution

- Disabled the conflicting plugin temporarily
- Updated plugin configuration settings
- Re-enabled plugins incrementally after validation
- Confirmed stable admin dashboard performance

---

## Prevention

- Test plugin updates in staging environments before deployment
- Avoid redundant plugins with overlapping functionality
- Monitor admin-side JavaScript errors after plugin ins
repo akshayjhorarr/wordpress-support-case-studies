@@ -1,0 +1,48 @@
+# WordPress Plugin Conflict Troubleshooting
+
+## Issue
+
+A WordPress website experienced admin dashboard instability and unexpected layout issues after multiple plugin updates.
+
+---
+
+## Symptoms
+
+- Admin dashboard loading inconsistently
+- Visual layout problems inside the WordPress admin panel
+- Slow page rendering
+- Certain plugin settings pages failing to load correctly
+
+---
+
+## Troubleshooting Steps
+
+1. Reviewed recently updated plugins
+2. Enabled troubleshooting workflow using plugin isolation techniques
+3. Temporarily switched to a default WordPress theme
+4. Disabled plugins individually to identify the conflicting plugin
+5. Reviewed browser console logs for JavaScript-related issues
+6. Tested dashboard functionality after each plugin change
+
+---
+
+## Root Cause
+
+A conflict between two plugins loading overlapping admin-side JavaScript assets caused dashboard instability and rendering issues.
+
+---
+
+## Resolution
+
+- Disabled the conflicting plugin temporarily
+- Updated plugin configuration settings
+- Re-enabled plugins incrementally after validation
+- Confirmed stable admin dashboard performance
+
+---
+
+## Prevention
+
+- Test plugin updates in staging environments before deployment
+- Avoid redundant plugins with overlapping functionality
+- Monitor admin-side JavaScript errors after plugin installations
